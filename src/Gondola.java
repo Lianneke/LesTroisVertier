@@ -18,6 +18,10 @@ public class Gondola extends Elevator{
             System.out.println("ACCESS ALLOWED");
             return true;
         }
-        //return super.controlAccess(tourist);
+    }
+
+    @Override
+    public boolean checkWeatherForecast(WeatherForecast weatherForecast) {
+        return super.checkWeatherForecast(weatherForecast);
     }
 }

@@ -15,4 +15,14 @@ public class Elevator {
     public boolean controlAccess(Tourist tourist){
         return false;
     }
+
+    public boolean checkWeatherForecast(WeatherForecast weatherForecast){
+        int windForce = weatherForecast.getWindForce();
+        if(windForce > maxWindForce){
+            return false;
+        }else{
+            return true;
+        }
+
+    }
 }

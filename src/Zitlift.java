@@ -18,4 +18,6 @@ public class Zitlift extends Elevator{
             return true;
         }
     }
+
+
 }
